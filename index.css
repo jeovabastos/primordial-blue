@@ -45,6 +45,16 @@
     background-color: var(--secondary-color);
 }
 
+@media screen and (max-width:600px){
+    .header, .header__ul{
+        flex-direction: column;
+    }
+
+    .header__ul, .header__ul__li{
+        width: 100%;
+    }
+}
+
 .product{
     display: flex;
 }
@@ -77,4 +87,18 @@
     padding: 1rem;
     display: flex;
     width: 70%;
+}
+
+@media screen and (max-width: 600px){
+    .product{
+        flex-direction: column-reverse;
+    }
+
+    .product__description{
+        width: 100%;
+    }
+
+    .product__img{
+        width: 100%;
+    }
 }
